@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+
+class AppColors {
+  static const Color primaryGreen = Color(0xFF24C97B);
+  static const Color primaryGreenDark = Color(0xFF139D52);
+  static const Color buttonGreen = Color(0xFF24C97B);
+  static const Color white = Colors.white;
+  static const Color white70 = Colors.white70;
+  static const Color lightGrey = Color(0xFFF7F9FB); 
+  static const Color textTitle = Color(0xFF222B45);
+  static const Color textBody = Color(0xFF5F6C7B);
+  static const Color accent = Color(0xFF1ABC9C);
+  static const Color error = Color(0xFFFF5B5B);
+
+  // Specific colors used in dashboard stats cards
+  static const Color blue = Color(0xFF3952FF);
+  static const Color purple = Color(0xFFC477F0);
+  static const Color orange = Color(0xFFFFA726);
+  static const Color red = Color(0xFFFF5252);
+  static const Color lightBlueBackground = Color(0xFFF6F9FF);
+  static const Color borderColor = Color(0xFFE6EEF7);
+  static const Color lightOrangeBackground = Color(0xFFFFF1E6);
+  static const Color darkOrange = Color(0xFFF09C3A);
+}
