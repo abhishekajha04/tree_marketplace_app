@@ -11,9 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'TreeMarket Pro',
       onGenerateRoute: AppRouter.generateRoute,
-      initialRoute: '/login',
+      initialRoute: '/main_navigation', ///testimonials , support , my_wallet , referralprogram 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
