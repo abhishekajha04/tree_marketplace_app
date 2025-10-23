@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: [
-          // Left Panel - Info and Branding
+         
           Expanded(
             flex: 2,
             child: Container(

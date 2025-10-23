@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
-import '../../../core/widgets/custom_button.dart';
+// import '../../../core/widgets/custom_button.dart';
 import '../widgets/bar_chart.dart';
 import '../widgets/revenue_summary_card.dart';
 import '../widgets/stats_card.dart';
@@ -126,7 +126,7 @@ class DashboardScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 32),
 
-                // Lower section: Bar chart and Activities
+                
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

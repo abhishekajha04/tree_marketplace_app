@@ -29,15 +29,15 @@ class RevenueSummaryCard extends StatelessWidget {
               Text(
                 "Monthly Revenue",
                 style: TextStyle(
-                  color: Color(0xFFB88200), // you can add to AppColors if used frequently
+                  color: Color(0xFFB88200),
                   fontWeight: FontWeight.w600,
                 ),
               ),
               const Spacer(),
               CircleAvatar(
                 radius: 16,
-                backgroundColor: Color(0xFFFFF1E6), // consider adding to AppColors
-                child: Icon(Icons.attach_money, color: Color(0xFFF09C3A), size: 20), // add to AppColors as needed
+                backgroundColor: Color(0xFFFFF1E6), 
+                child: Icon(Icons.attach_money, color: Color(0xFFF09C3A), size: 20), 
               ),
             ],
           ),
