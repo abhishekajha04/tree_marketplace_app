@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../widgets/sidebar_navigation.dart';
 import '../widgets/user_growth_trends_chart.dart';
 import '../widgets/tree_performance_chart.dart';
 import '../widgets/financial_summary_chart.dart';
@@ -20,14 +19,7 @@ class _AnalyticsDashboardScreenState extends State<AnalyticsDashboardScreen> {
       backgroundColor: const Color(0xFFF8FAFC),
       body: Row(
         children: [
-          SidebarNavigation(
-            selectedIndex: selectedIndex,
-            onItemSelected: (idx) {
-              setState(() {
-                selectedIndex = idx;
-              });
-            },
-          ),
+         
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(32.0),

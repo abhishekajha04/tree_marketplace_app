@@ -5,7 +5,7 @@ import '../widgets/profile_bank_details.dart';
 import '../widgets/profile_kyc_documents.dart';
 import '../widgets/profile_recent_purchases.dart';
 import '../widgets/profile_payout_requests.dart';
-import '../widgets/profile_sidebar.dart';
+
 
 class UserProfileScreen extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class UserProfileScreen extends StatelessWidget {
         color: const Color.fromARGB(242, 255, 255, 255), 
         child: Row(
           children: [
-            ProfileSidebar(),
+           
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

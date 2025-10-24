@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/transaction_filters.dart';
 import '../widgets/transaction_list.dart';
-import '../widgets/transaction_sidebar.dart';
+
 
 class TransactionScreen extends StatefulWidget {
   const TransactionScreen({super.key});
@@ -19,17 +19,9 @@ class _TransactionScreenState extends State<TransactionScreen> {
       backgroundColor: Colors.grey[50],
       body: Row(
         children: [
-          // Sidebar
-          TransactionSidebar(
-            selectedIndex: _selectedIndex,
-            onItemSelected: (index) {
-              setState(() {
-                _selectedIndex = index;
-              });
-            },
-          ),
+         
           
-          // Main Content
+          
           Expanded(
             child: _buildMainContent(),
           ),

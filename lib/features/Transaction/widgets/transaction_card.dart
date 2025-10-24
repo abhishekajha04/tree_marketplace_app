@@ -41,9 +41,9 @@ Widget typeBadge(String type) {
     child: Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Icon(icon, color: fg, size: 15),
+        Icon(icon, color: fg, size: 17),
         const SizedBox(width: 4),
-        Text(type, style: TextStyle(color: fg, fontWeight: FontWeight.w600, fontSize: 11)),
+        Text(type, style: TextStyle(color: fg, fontWeight: FontWeight.w600, fontSize: 13)),
       ],
     ),
   );
@@ -80,7 +80,7 @@ Widget statusBadge(String status) {
       color: bg,
       borderRadius: BorderRadius.circular(14),
     ),
-    child: Text(status, style: TextStyle(color: fg, fontWeight: FontWeight.w600, fontSize: 11)),
+    child: Text(status, style: TextStyle(color: fg, fontWeight: FontWeight.w600, fontSize: 13)),
   );
 }
 
@@ -135,7 +135,7 @@ class TransactionCard extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(transaction.userName, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+                    Text(transaction.userName, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
                     Text(transaction.userEmail, style: TextStyle(fontSize: 10, color: Colors.grey[500])),
                   ],
                 ),
@@ -145,7 +145,7 @@ class TransactionCard extends StatelessWidget {
         
           Expanded(
             flex: 2,
-            child: Text(transaction.amount, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
+            child: Text(transaction.amount, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
           ),
          
           Expanded(
@@ -155,7 +155,7 @@ class TransactionCard extends StatelessWidget {
               children: [
                 Text(
                   transaction.date.split(' ')[0] + " " + transaction.date.split(' ')[1].replaceAll(',', ''),
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
                 Text(
                   transaction.date.split(' ').sublist(2).join(' '),
@@ -191,7 +191,7 @@ class TransactionCard extends StatelessWidget {
           SizedBox(width: 5),
           _actionBtn("Reject", Colors.red, Icons.close, true),
           SizedBox(width: 5),
-          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 16),
+          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 18),
         ],
       );
     } else if (status == "Approved") {
@@ -200,7 +200,7 @@ class TransactionCard extends StatelessWidget {
         children: [
           _actionBtn("Approved", Colors.green.shade100, Icons.check_circle, false, txtColor: Colors.green),
           SizedBox(width: 5),
-          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 16),
+          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 18),
         ],
       );
     } else if (status == "Rejected") {
@@ -209,7 +209,7 @@ class TransactionCard extends StatelessWidget {
         children: [
           _actionBtn("Rejected", Colors.red.shade100, Icons.cancel, false, txtColor: Colors.red),
           SizedBox(width: 5),
-          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 16),
+          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 18),
         ],
       );
     } else if (status == "Completed") {
@@ -218,11 +218,11 @@ class TransactionCard extends StatelessWidget {
         children: [
           _actionBtn("Completed", Colors.blue.shade100, Icons.done_all, false, txtColor: Colors.blue),
           SizedBox(width: 5),
-          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 16),
+          Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 18),
         ],
       );
     }
-    return Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 16);
+    return Icon(Icons.remove_red_eye_outlined, color: Colors.grey[600], size: 18);
   }
 
   Widget _actionBtn(String text, Color color, IconData icon, bool active, {Color? txtColor}) {
@@ -236,7 +236,7 @@ class TransactionCard extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, color: txtColor ?? Colors.white, size: 12),
+          Icon(icon, color: txtColor ?? Colors.white, size: 15),
           const SizedBox(width: 3),
           Text(
             text,

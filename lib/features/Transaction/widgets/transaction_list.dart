@@ -36,7 +36,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
-                      fontSize: 11,
+                      fontSize: 13,
                       letterSpacing: 0.2
                     ),
                   ),
@@ -48,7 +48,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
-                      fontSize: 11,
+                      fontSize: 13,
                       letterSpacing: 0.2
                     ),
                   ),
@@ -60,7 +60,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
-                      fontSize: 11,
+                      fontSize: 13,
                       letterSpacing: 0.2
                     ),
                   ),
@@ -72,7 +72,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
-                      fontSize: 11,
+                      fontSize: 13,
                       letterSpacing: 0.2
                     ),
                   ),
@@ -84,7 +84,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
-                      fontSize: 11,
+                      fontSize: 13,
                       letterSpacing: 0.2
                     ),
                   ),
@@ -96,7 +96,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
-                      fontSize: 11,
+                      fontSize: 13,
                       letterSpacing: 0.2
                     ),
                   ),
@@ -108,7 +108,7 @@ class TransactionList extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
-                      fontSize: 11,
+                      fontSize: 13,
                       letterSpacing: 0.2
                     ),
                   ),

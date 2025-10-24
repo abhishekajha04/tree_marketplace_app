@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'TreeMarket Pro',
       debugShowCheckedModeBanner: false, 
       onGenerateRoute: AppRouter.generateRoute,
-      initialRoute: '/caretakerDashboard',
+      initialRoute: '/adminLogin',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,

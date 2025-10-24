@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/sidebar_menu.dart';
+
 import '../widgets/user_table.dart';
 
 class UserManagementScreen extends StatelessWidget {
@@ -9,8 +9,8 @@ class UserManagementScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFF6F8FA),
       body: Row(
         children: [
-          // Sidebar
-          SidebarMenu(selectedKey: 'Users'),
+         
+        
           // Main content
           Expanded(
             child: Column(
@@ -99,7 +99,7 @@ class UserManagementScreen extends StatelessWidget {
                 // Users Table
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsets.all(32),
+                    padding: EdgeInsets.all(0),
                     child: UserTable(),
                   ),
                 ),

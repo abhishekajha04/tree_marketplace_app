@@ -4,8 +4,8 @@ import '../../../core/constants/app_colors.dart';
 class TreeFilterBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Set a fixed width for all fields for precision
-    const double fieldWidth = 275;
+   
+    const double fieldWidth = 260;
     const double fieldSpacing = 20;
 
     return Card(
@@ -41,7 +41,7 @@ class TreeFilterBar extends StatelessWidget {
               ],
             ),
             SizedBox(height: 8),
-            // Main field row
+            
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/sidebar_navigation.dart';
+
 import '../widgets/notification_stat_card.dart';
 import '../widgets/recent_notifications_list.dart';
 import '../widgets/quick_actions_card.dart';
@@ -13,7 +13,7 @@ class NotificationsCenterScreen extends StatelessWidget {
       backgroundColor: Color(0xFFF8FAFC),
       body: Row(
         children: [
-          SidebarNavigation(),
+       
           Expanded(
             child: SingleChildScrollView(
               child: Padding(

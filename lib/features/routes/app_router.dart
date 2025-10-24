@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import '../auth/screens/adminLogin_screen.dart';
-import '../dashboard/screens/dashboard_screen.dart';
+import '../AdminDashboard/screens/dashboard_screen.dart';
 import '../tree_management/screens/tree_management_screen.dart';
 import '../user_management/screens/user_management_screen.dart';
 import '../user_panel/screens/user_profile_screen.dart';
 import '../caretaker_dashboard/screens/caretaker_dashboard_screen.dart';
-import '../Transaction_Management/screens/transaction_screen.dart';
-import '../tree_care/screens/analytics_dashboard_screen.dart';
+import '../Transaction/screens/transaction_screen.dart';
+import '../analytics_dashboard/screens/analytics_dashboard_screen.dart';
 import '../notifications_center/screens/notifications_center_screen.dart';
 
 
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case '/adminlogin':
+      case '/adminLogin':
         return MaterialPageRoute(builder: (_) => const LoginScreen());
-      case '/dashboard':
+      case '/adminDashboard':
         return MaterialPageRoute(builder: (_) => const DashboardScreen());
       case '/treemanagement':
         return MaterialPageRoute(builder: (_) =>  TreeManagementScreen());

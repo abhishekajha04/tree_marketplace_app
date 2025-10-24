@@ -5,7 +5,6 @@ import '../widgets/caretaker_table.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/widgets/custom_button.dart';
 
-
 class StatItem {
   final String title;
   final String value;
@@ -38,7 +37,6 @@ class Caretaker {
   });
 }
 
-// --- Main Dashboard Screen ---
 class CaretakerDashboardScreen extends StatelessWidget {
   const CaretakerDashboardScreen({super.key});
 
@@ -47,29 +45,29 @@ class CaretakerDashboardScreen extends StatelessWidget {
       'Total Caretakers',
       '--',
       Icons.people_alt,
-      AppColors.lightBlueBackground, 
-      AppColors.blue, 
+      AppColors.lightBlueBackground,
+      AppColors.blue,
     ),
     StatItem(
       'Assigned Trees',
       '--',
       Icons.nature_people,
-      AppColors.lightGrey, 
+      AppColors.lightGrey,
       AppColors.primaryGreen,
     ),
     StatItem(
       'Avg Performance',
       '--%',
       Icons.ssid_chart,
-      AppColors.lightOrangeBackground, 
-      AppColors.orange, 
+      AppColors.lightOrangeBackground,
+      AppColors.orange,
     ),
     StatItem(
       'Active Tasks',
       '--',
       Icons.format_list_bulleted,
-      Color(0xFFF3E5F5), 
-      AppColors.purple, 
+      Color(0xFFF3E5F5),
+      AppColors.purple,
     ),
   ];
 
@@ -121,6 +119,7 @@ class CaretakerDashboardScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.lightGrey,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: AppColors.white,
         elevation: 0,
         toolbarHeight: 70,
@@ -164,7 +163,6 @@ class CaretakerDashboardScreen extends StatelessWidget {
               onPressed: () {},
               icon: Icons.add,
               text: 'Add Caretaker',
-              
             ),
           ),
           const Padding(
@@ -181,7 +179,6 @@ class CaretakerDashboardScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 1. Stats Cards
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -203,9 +200,7 @@ class CaretakerDashboardScreen extends StatelessWidget {
                 );
               },
             ),
-
             const SizedBox(height: 32),
-
             const Text(
               'Caretaker Management',
               style: TextStyle(
@@ -214,13 +209,10 @@ class CaretakerDashboardScreen extends StatelessWidget {
                 color: AppColors.textTitle,
               ),
             ),
-
             const SizedBox(height: 16),
             const CaretakerSearchBar(),
             const SizedBox(height: 16),
-
             CaretakerTable(caretakers: caretakers),
-
             const SizedBox(height: 24),
           ],
         ),
