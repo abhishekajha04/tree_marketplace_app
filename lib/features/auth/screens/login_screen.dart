@@ -126,13 +126,12 @@ class LoginScreen extends StatelessWidget {
                         width: double.infinity,
                         height: 48,
                         child: CustomButton(
-  text: "Sign In to Dashboard",
-  icon: Icons.arrow_forward,
-  onPressed: () {
-    Navigator.pushNamed(context, '/dashboard');
-  },
-)
-
+                          text: "Sign In to Dashboard",
+                          icon: Icons.arrow_forward,
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/dashboard');
+                          },
+                        ),
                       ),
                       SizedBox(height: 32),
                       Row(
@@ -140,7 +139,10 @@ class LoginScreen extends StatelessWidget {
                         children: [
                           TextButton(onPressed: () {}, child: Text("Support")),
                           Text(" | "),
-                          TextButton(onPressed: () {}, child: Text("Documentation")),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("Documentation"),
+                          ),
                           Text(" | "),
                           TextButton(onPressed: () {}, child: Text("Contact")),
                         ],
@@ -186,14 +188,18 @@ class _FeatureItem extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(color: AppColors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  color: AppColors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Text(
                 subtitle,
                 style: TextStyle(color: AppColors.white70, fontSize: 14),
               ),
             ],
-          )
+          ),
         ],
       ),
     );

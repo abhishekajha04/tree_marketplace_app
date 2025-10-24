@@ -189,17 +189,6 @@ class DashboardScreen extends StatelessWidget {
                             _ActivityItem(icon: Icons.account_balance_wallet, iconColor: Color(0xFFC477F0), title: "Payment processed", subtitle: "\$89 payment to caretaker John Doe\n1 hour ago"),
                             _ActivityItem(icon: Icons.update, iconColor: Color(0xFFFFA726), title: "Tree update received", subtitle: "New photos from Pine Tree #1847\n3 hours ago"),
                             _ActivityItem(icon: Icons.warning_amber, iconColor: Color(0xFFFF5252), title: "Alert: Tree needs attention", subtitle: "Maple Tree #2156 requires watering\n5 hours ago"),
-                            SizedBox(height: 12),
-                            InkWell(
-                              onTap: () {},
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(vertical: 8),
-                                child: Text(
-                                  "View all activities",
-                                  style: TextStyle(color: AppColors.primaryGreen, fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                            )
                           ],
                         ),
                       ),
