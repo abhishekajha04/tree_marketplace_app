@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'TreeMarket Pro',
       onGenerateRoute: AppRouter.generateRoute,
-      initialRoute: '/login',
+      initialRoute: '/mygardenscreen',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
