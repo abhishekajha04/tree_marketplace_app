@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: [
-          // Left Panel - Info and Branding
+         
           Expanded(
             flex: 2,
             child: Container(
@@ -129,7 +129,7 @@ class LoginScreen extends StatelessWidget {
   text: "Sign In to Dashboard",
   icon: Icons.arrow_forward,
   onPressed: () {
-    Navigator.pushNamed(context, '/dashboard');
+    Navigator.pushNamed(context, '/adminDashboard');
   },
 )
 
